@@ -140,9 +140,9 @@ function _location_cck_field_widget_form_click(latitude_id, longitude_id) {
  */
 function location_cck_assemble_form_state_into_field(entity_type, bundle, form_state_value, field, instance, langcode, delta, field_key) {
   try {
-    console.log(form_state_value, 'form_state_value');
-    console.log(field_key, 'field_key');
-    console.log(field, 'field');
+    //console.log(form_state_value, 'form_state_value');
+    //console.log(field_key, 'field_key');
+    //console.log(field, 'field');
     if (empty(form_state_value)) { return null; }
     var coordinates = form_state_value.split(',');
     if (coordinates.length != 2) { return null; }
